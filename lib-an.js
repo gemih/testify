@@ -4,6 +4,7 @@ function analizeazaRoluri() {
     //Take all checked boxes from .funcClass aka rl prezent
     rl_p = []
     rl_v = []
+    document.querySelector("#date_tab").innerHTML = "";
     document.querySelectorAll(".rol_class").forEach(radio => {
         if (radio.checked === true) {
             rl_p.push(radio.id)
